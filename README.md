@@ -1,1 +1,1 @@
-# sistema_bancario
+# Curso básico de JavaScript
