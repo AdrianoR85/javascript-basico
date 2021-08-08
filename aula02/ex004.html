@@ -13,10 +13,21 @@
 </head>
 <body>
     <script>
-        var nome = window.prompt("Digite");
+        var nome = window.prompt("Digite seu nome");
         document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras <br>`)
         document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong> <br>`)
-        document.write(`Seu nome em minúsculas é <strong>${nome.toLocaleLowerCase()}</strong>`)
+        document.write(`Seu nome em minúsculas é <strong>${nome.toLowerCase()}</strong> <br><br>`)
+
+        document.writeln("5 == '5' " + (5 == "5") +"<br>")
+        document.writeln("5 ==  5 " + (5 == "5") +"<br>")
+        document.writeln("5 === '5' " + (5 === "5")+"<br>")
+        document.writeln("5 ===  5 " + (5 ===  5)+"<br><br>")
+
+        document.writeln("5 !=  '5' " + (5 != '5')+"<br>")
+        document.writeln("5 !=  5 " + (5 !=  5)+"<br>")
+        document.writeln("5 !== '5' " + (5 !== '5')+"<br>")
+        document.writeln("5 !==  5 " + (5 !==  5)+"<br>")
+
     </script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do aluno</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(218, 216, 214);
+        }
+        div{
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 7px 7px rgba(0, 0, 0, 0.288) ;
+        }
+        h1{
+            background-color: rgba(71, 67, 67, 0.89);
+            color: white;
+            font: bold 2em Arial;
+            padding: 10px;
+            text-align: center;
+        }
+        h2{
+            font: bold 1.4em Arial ;
+            padding: 10px 0 0 10px;
+        }
+        p{
+            font: normal 1.2em Arial;
+            padding: 0 0 10px 10px;
+        }
+
+    </style>
+</head>
+<body>
+   <script>
+        var nome = window.prompt("Nome do Aluno(a):")
+        var nota1 = Number(window.prompt("1° Nota: ").replace(",", "."))
+        var nota2 = Number(window.prompt("2° Nota: ").replace(",", "."))
+        var nota3 = Number(window.prompt("3° Nota: ").replace(",", "."))
+    </script>
+
+    <div>
+        <h1>Boletin do Aluno</h1>
+        <h2>Nome:</h2>
+            <p>
+                <script>
+                    document.write(nome.toUpperCase())
+                </script>
+            </p>
+        
+        <h2>Notas:</h2>
+            <p>
+                <script>
+                    document.write(`${nota1.toFixed(1)} <br> ${nota2.toFixed(1)} <br> ${nota3.toFixed(1)} <br>`)
+                </script>
+            </p>
+        
+        <h2>Média:</h2>
+            <p>
+                <script>
+                    var media = (nota1 + nota2 + nota3) / 3
+                    document.write(`${media.toFixed(1)}`)
+                </script>
+            </p>
+        
+        <h2>Resultado Final:</h2>
+            <p>
+                <script>
+                    document.write(`${media >= 7? "Aprovado":"Reprovado"}`)
+                </script>
+            </p>
+    </div>
+</body>
+</html>
