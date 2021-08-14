@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(70, 142, 236);
+    font: normal 1.25em Arial;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    color: black;
+    width: 200px;
+    height: 75px;
+    font: bold 0.9em Arial;
+    
+}
