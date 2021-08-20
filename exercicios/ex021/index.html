@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplas ações</title>
+    <title>Jogo da Adivinhação JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Múltiplas ações</h1>
+        <h1>Tente adivinhar meu número</h1>
     </header>
     <section>
+        <p>Pense em um número e ver se é igual ao meu</p>
         <div>
-            <button onclick="calcular()">Clique aqui</button>
+            <button onclick="gerar()">Adivinhar</button>
+            <button onclick="limpar()">Limpar</button>
         </div>
-        <div id="saida">
-            
+        <div id="msg">
+            Já pensei em um número entre 1 e 100
         </div>
     </section>
     <footer>

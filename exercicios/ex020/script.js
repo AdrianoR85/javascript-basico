@@ -1,25 +1,24 @@
-let min = 1
-let max = 100
-let dif = max - min
-let aleatorio = Math.random()
-let num = min + Math.trunc(dif * aleatorio)
+function calcular(){
+    let num1 = Number(prompt('Digite o 1° valar:'))
+    let num2 = Number(prompt('Digite o 2° valor'))
+    let operador = Number(prompt(`Valores informados: ${num1} e ${num2}\nEscolha a Operção: \n[1] Somar \n[2] Subtrair \n[3] Multiplicar \n[4] Dividir `))
+    let saida = document.querySelector('div#saida')
 
-let msg = document.querySelector('div#msg')
-
-function gerar(){
-    let numJogador = Number(prompt("Qual é o seu palpite?"))
-
-    if(numJogador < num){
-        msg.innerHTML += `<p>Você falou ${numJogador}. Meu número é <strong>MAIOR</strong></p>`
-    } else if(numJogador > num){
-        msg.innerHTML += `<p>Você falou ${numJogador}. Meu número é <strong>MENOR</strong></p>`
-    } else{
-        msg.innerHTML += `<p><strong>PARABÈNS!</strong> Você acertou! Eu tinha sorteado o valor ${num}</p>`
+    saida.innerHTML = 'Calculando...\n'
+    switch(operador){
+        case 1:
+            saida.textContent += `${num1} + ${num2} = ${num1+num2}` 
+            break
+        case 2:
+            saida.textContent += `${num1} - ${num2} = ${num1-num2}`
+            break
+        case 3 :
+            saida.textContent += `${num1} * ${num2} = ${num1*num2}`
+            break
+        case 4:
+            saida.textContent += `${num1} / ${num2} = ${num1/num2}`
+            break
+        default:
+            saida.innerHTML = '<p>Opções inválidas</p>'
     }
-    
-}
-
-function limpar(){
-    msg.innerHTML = null
-    msg.innerHTML = 'Já pensei em um número entre 1 e 100.'
 }
