@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-color: rgb(70, 142, 236);
+    font: normal 1.2em arial
+}
+
+header {
+    text-align: center;
+    color: #fff;
+}
+
+h1, p{
+    font-family: 'Pacifico', cursive;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 450px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#botao {
+    width:70px;
+    height: 25px;
+    font: bolder 0.8em Arial;
+    background-color: rgb(23, 134, 29);
+    color: white;
+}
+input{
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+
+}
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+.dados{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+P{
+    text-align: center;
+}
