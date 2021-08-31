@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-color: rgb(70, 142, 236);
+    font: normal 1.2em arial
+}
+
+header {
+    text-align: center;
+    color: #fff;
+}
+
+h1, h2{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-top: 10px;
+}
+
+P{
+    text-align: center;
+}
+
+section#entrada {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+section#saida {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+input[type=number]{
+    text-align: center;
+    width:75px;
+    height: 20px;
+    border-radius: 5px;
+    border-style: bold;
+    border-color: black;
+}
+input[type=submit] {
+    width:75px;
+    height: 30px;
+    font: bolder 0.9em Arial;
+    background-color: rgb(23, 134, 29);
+    color: white;
+
+    border-radius: 5px;
+    border-style: bold;
+    border-color: black; 
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
